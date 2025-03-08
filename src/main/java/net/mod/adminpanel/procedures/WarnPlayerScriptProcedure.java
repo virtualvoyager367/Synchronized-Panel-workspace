@@ -15,7 +15,7 @@ public class WarnPlayerScriptProcedure {
 		if (guistate == null)
 			return;
 		String Reason = "";
-		Reason = "\"text\":\"" + "" + ("Warning from Moderator: " + (guistate.containsKey("textin:TargetWarnedReason") ? (String) guistate.get("textin:TargetWarnedReason") : "") + "\",");
+		Reason = "\"text\":\"" + "" + ("Moderator Warning: " + (guistate.containsKey("textin:TargetWarnedReason") ? (String) guistate.get("textin:TargetWarnedReason") : "") + "\",");
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 					("/tellraw " + (guistate.containsKey("textin:TargetWarnedPlayer") ? (String) guistate.get("textin:TargetWarnedPlayer") : "") + " " + "{" + Reason + "\"color\":" + "\"red\"," + "\"bold\":" + "true" + "}"));
