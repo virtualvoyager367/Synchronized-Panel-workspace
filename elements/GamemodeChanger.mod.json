@@ -51,10 +51,13 @@
           "onClick": {
             "name": "OpengamemodeEveryoneChanger"
           },
+          "displayCondition": {
+            "name": "HLAChecker"
+          },
           "width": 67,
           "height": 20,
-          "x": 180,
-          "y": 76,
+          "x": 176,
+          "y": 173,
           "locked": false
         }
       },
@@ -69,8 +72,8 @@
           },
           "width": 103,
           "height": 20,
-          "x": 164,
-          "y": 106,
+          "x": 160,
+          "y": 108,
           "locked": false
         }
       },
@@ -85,8 +88,65 @@
           },
           "width": 93,
           "height": 20,
-          "x": 168,
+          "x": 165,
+          "y": 77,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_all_options_below_are_for_hla",
+          "text": {
+            "fixedValue": "HLA Only"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "HLAChecker"
+          },
+          "x": 193,
+          "y": 146,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "--------------------------------"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "HLAChecker"
+          },
+          "x": 129,
           "y": 135,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty1",
+          "text": {
+            "fixedValue": "--------------------------------"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "HLAChecker"
+          },
+          "x": 131,
+          "y": 154,
           "locked": false
         }
       }

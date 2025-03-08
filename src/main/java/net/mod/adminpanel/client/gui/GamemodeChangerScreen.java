@@ -3,6 +3,7 @@ package net.mod.adminpanel.client.gui;
 import net.neoforged.neoforge.network.PacketDistributor;
 
 import net.mod.adminpanel.world.inventory.GamemodeChangerMenu;
+import net.mod.adminpanel.procedures.HLACheckerProcedure;
 import net.mod.adminpanel.network.GamemodeChangerButtonMessage;
 import net.mod.adminpanel.init.AdminPanelModScreens.WidgetScreen;
 
@@ -83,6 +84,12 @@ public class GamemodeChangerScreen extends AbstractContainerScreen<GamemodeChang
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.admin_panel.gamemode_changer.label_admin_panel_gamemode_changer"), 8, 10, -12829636, false);
+		if (HLACheckerProcedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.admin_panel.gamemode_changer.label_all_options_below_are_for_hla"), 65, 126, -12829636, false);
+		if (HLACheckerProcedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.admin_panel.gamemode_changer.label_empty"), 1, 115, -12829636, false);
+		if (HLACheckerProcedure.execute(entity))
+			guiGraphics.drawString(this.font, Component.translatable("gui.admin_panel.gamemode_changer.label_empty1"), 3, 134, -12829636, false);
 	}
 
 	@Override
@@ -97,11 +104,17 @@ public class GamemodeChangerScreen extends AbstractContainerScreen<GamemodeChang
 		guistate.put("button:button_you", button_you);
 		this.addRenderableWidget(button_you);
 		button_everyone = Button.builder(Component.translatable("gui.admin_panel.gamemode_changer.button_everyone"), e -> {
-			if (true) {
+			if (HLACheckerProcedure.execute(entity)) {
 				PacketDistributor.sendToServer(new GamemodeChangerButtonMessage(1, x, y, z, getEditBoxAndCheckBoxValues()));
 				GamemodeChangerButtonMessage.handleButtonAction(entity, 1, x, y, z, getEditBoxAndCheckBoxValues());
 			}
-		}).bounds(this.leftPos + 52, this.topPos + 56, 67, 20).build();
+		}).bounds(this.leftPos + 48, this.topPos + 153, 67, 20).build(builder -> new Button(builder) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
+				this.visible = HLACheckerProcedure.execute(entity);
+				super.renderWidget(guiGraphics, gx, gy, ticks);
+			}
+		});
 		guistate.put("button:button_everyone", button_everyone);
 		this.addRenderableWidget(button_everyone);
 		button_specific_player = Button.builder(Component.translatable("gui.admin_panel.gamemode_changer.button_specific_player"), e -> {
@@ -109,7 +122,7 @@ public class GamemodeChangerScreen extends AbstractContainerScreen<GamemodeChang
 				PacketDistributor.sendToServer(new GamemodeChangerButtonMessage(2, x, y, z, getEditBoxAndCheckBoxValues()));
 				GamemodeChangerButtonMessage.handleButtonAction(entity, 2, x, y, z, getEditBoxAndCheckBoxValues());
 			}
-		}).bounds(this.leftPos + 36, this.topPos + 86, 103, 20).build();
+		}).bounds(this.leftPos + 32, this.topPos + 88, 103, 20).build();
 		guistate.put("button:button_specific_player", button_specific_player);
 		this.addRenderableWidget(button_specific_player);
 		button_random_player = Button.builder(Component.translatable("gui.admin_panel.gamemode_changer.button_random_player"), e -> {
@@ -117,7 +130,7 @@ public class GamemodeChangerScreen extends AbstractContainerScreen<GamemodeChang
 				PacketDistributor.sendToServer(new GamemodeChangerButtonMessage(3, x, y, z, getEditBoxAndCheckBoxValues()));
 				GamemodeChangerButtonMessage.handleButtonAction(entity, 3, x, y, z, getEditBoxAndCheckBoxValues());
 			}
-		}).bounds(this.leftPos + 40, this.topPos + 115, 93, 20).build();
+		}).bounds(this.leftPos + 37, this.topPos + 57, 93, 20).build();
 		guistate.put("button:button_random_player", button_random_player);
 		this.addRenderableWidget(button_random_player);
 	}
