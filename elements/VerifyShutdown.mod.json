@@ -1,0 +1,86 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 147,
+    "height": 68,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_are_you_sure_you_want",
+          "text": {
+            "fixedValue": "Are You Sure You Want To"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 147,
+          "y": 96,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_to_shutdown_the_server",
+          "text": {
+            "fixedValue": "Shutdown The Server?"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 157,
+          "y": 104,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_yes",
+          "text": "Yes",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Shutdownserver"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 231,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_no",
+          "text": "No",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenHLAServerMenu"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 157,
+          "y": 120,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

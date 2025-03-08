@@ -1,0 +1,2491 @@
+{
+  "mod_elements": [
+    {
+      "name": "AdminPanelGamemode",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "admin_panel_gamemode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/client/gui/AdminPanelGamemodeScreen.java",
+          "src/main/java/net/mod/adminpanel/network/AdminPanelGamemodeButtonMessage.java",
+          "src/main/java/net/mod/adminpanel/world/inventory/AdminPanelGamemodeMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "SetGamemodeSurvival",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_gamemode_survival",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/SetGamemodeSurvivalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AdminpanelPersonal",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "adminpanel_personal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/client/gui/AdminpanelPersonalScreen.java",
+          "src/main/java/net/mod/adminpanel/network/AdminpanelPersonalButtonMessage.java",
+          "src/main/java/net/mod/adminpanel/world/inventory/AdminpanelPersonalMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "AdminPanelSetting",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "admin_panel_setting",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/network/AdminPanelSettingButtonMessage.java",
+          "src/main/java/net/mod/adminpanel/world/inventory/AdminPanelSettingMenu.java",
+          "src/main/java/net/mod/adminpanel/client/gui/AdminPanelSettingScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "AdminPanelMain",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "admin_panel_main",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/network/AdminPanelMainButtonMessage.java",
+          "src/main/java/net/mod/adminpanel/world/inventory/AdminPanelMainMenu.java",
+          "src/main/java/net/mod/adminpanel/client/gui/AdminPanelMainScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "OpenGamemodeSettings",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_gamemode_settings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenGamemodeSettingsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenPersonalSettings",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_personal_settings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenPersonalSettingsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenSettings",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_settings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenSettingsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenAdminPanelCode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_admin_panel_code",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenAdminPanelCodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenAdminPanel",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_admin_panel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/network/OpenAdminPanelMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "SetGamemodeCreative",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_gamemode_creative",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/SetGamemodeCreativeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetGamemodeSpectator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_gamemode_spectator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/SetGamemodeSpectatorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetGamemodeAdventure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_gamemode_adventure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/SetGamemodeAdventureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Coords",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coords",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/CoordsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CoordsUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coords_update",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/CoordsUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CoordsUpdateReturn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coords_update_return",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/CoordsUpdateReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GiveAdmin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_admin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/GiveAdminProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetAdmin",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_admin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/command/SetAdminCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "TakeAdminFromPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "take_admin_from_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/TakeAdminFromPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TP",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/world/inventory/TPMenu.java",
+          "src/main/java/net/mod/adminpanel/network/TPButtonMessage.java",
+          "src/main/java/net/mod/adminpanel/client/gui/TPScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "TPCode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp_code",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/TPCodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenTP",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_tp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenTPProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WeatherPanel",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weather_panel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/network/WeatherPanelButtonMessage.java",
+          "src/main/java/net/mod/adminpanel/world/inventory/WeatherPanelMenu.java",
+          "src/main/java/net/mod/adminpanel/client/gui/WeatherPanelScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "ClearWeather",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clear_weather",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/ClearWeatherProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WeatherRainy",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weather_rainy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/WeatherRainyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WeatherThunder",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weather_thunder",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/WeatherThunderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenWeather",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_weather",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenWeatherProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shutdownserver",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shutdownserver",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/ShutdownserverProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ShowVersion",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "show_version",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/client/screens/ShowVersionOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "BackToMainPanel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "back_to_main_panel",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/BackToMainPanelProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VerifyShutdown",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "verify_shutdown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/world/inventory/VerifyShutdownMenu.java",
+          "src/main/java/net/mod/adminpanel/client/gui/VerifyShutdownScreen.java",
+          "src/main/java/net/mod/adminpanel/network/VerifyShutdownButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "OpenVerify",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_verify",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenVerifyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Timeset",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timeset",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/network/TimesetButtonMessage.java",
+          "src/main/java/net/mod/adminpanel/world/inventory/TimesetMenu.java",
+          "src/main/java/net/mod/adminpanel/client/gui/TimesetScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "Timesetday",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timesetday",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/TimesetdayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Timesetnoon",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timesetnoon",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/TimesetnoonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Timesetnight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timesetnight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/TimesetnightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Timesetmidnight",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "timesetmidnight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/TimesetmidnightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Opentime",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "opentime",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpentimeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MessageSettings",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "message_settings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/network/MessageSettingsButtonMessage.java",
+          "src/main/java/net/mod/adminpanel/client/gui/MessageSettingsScreen.java",
+          "src/main/java/net/mod/adminpanel/world/inventory/MessageSettingsMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "ServerOnly",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "server_only",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/network/ServerOnlyButtonMessage.java",
+          "src/main/java/net/mod/adminpanel/world/inventory/ServerOnlyMenu.java",
+          "src/main/java/net/mod/adminpanel/client/gui/ServerOnlyScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "MessageServer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "message_server",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/MessageServerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenServerOnly",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_server_only",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenServerOnlyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenMessageServer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_message_server",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenMessageServerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeChanger",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_changer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/network/GamemodeChangerButtonMessage.java",
+          "src/main/java/net/mod/adminpanel/client/gui/GamemodeChangerScreen.java",
+          "src/main/java/net/mod/adminpanel/world/inventory/GamemodeChangerMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "OpenGamemodeChanger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_gamemode_changer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenGamemodeChangerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeYouChanger",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_you_changer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/network/GamemodeYouChangerButtonMessage.java",
+          "src/main/java/net/mod/adminpanel/client/gui/GamemodeYouChangerScreen.java",
+          "src/main/java/net/mod/adminpanel/world/inventory/GamemodeYouChangerMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "GamemodeYouCreative",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_you_creative",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/GamemodeYouCreativeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeYouSurvival",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_you_survival",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/GamemodeYouSurvivalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeYouAdventure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_you_adventure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/GamemodeYouAdventureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeYouSpectator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_you_spectator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/GamemodeYouSpectatorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenGamemodeYou",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_gamemode_you",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenGamemodeYouProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeEveryoneSurvival",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_everyone_survival",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/GamemodeEveryoneSurvivalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeEveryoneChanger",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_everyone_changer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/client/gui/GamemodeEveryoneChangerScreen.java",
+          "src/main/java/net/mod/adminpanel/network/GamemodeEveryoneChangerButtonMessage.java",
+          "src/main/java/net/mod/adminpanel/world/inventory/GamemodeEveryoneChangerMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "OpengamemodeEveryoneChanger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "opengamemode_everyone_changer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpengamemodeEveryoneChangerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeEveryoneCreative",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_everyone_creative",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/GamemodeEveryoneCreativeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeEveryoneAdventure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_everyone_adventure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/GamemodeEveryoneAdventureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeEveryoneSpectator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_everyone_spectator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/GamemodeEveryoneSpectatorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeSpecificChanger",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_specific_changer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/world/inventory/GamemodeSpecificChangerMenu.java",
+          "src/main/java/net/mod/adminpanel/client/gui/GamemodeSpecificChangerScreen.java",
+          "src/main/java/net/mod/adminpanel/network/GamemodeSpecificChangerButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "GamemodeSpecificSurvival",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_specific_survival",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/GamemodeSpecificSurvivalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenGamemodeSpecific",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_gamemode_specific",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenGamemodeSpecificProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeSpecificCreative",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_specific_creative",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/GamemodeSpecificCreativeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeSpecificAdventure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_specific_adventure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/GamemodeSpecificAdventureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeSpecificSpectator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_specific_spectator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/GamemodeSpecificSpectatorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeRandomChanger",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_random_changer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/world/inventory/GamemodeRandomChangerMenu.java",
+          "src/main/java/net/mod/adminpanel/client/gui/GamemodeRandomChangerScreen.java",
+          "src/main/java/net/mod/adminpanel/network/GamemodeRandomChangerButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "OpenRandomGamemode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_random_gamemode",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenRandomGamemodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeRandomSurvival",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_random_survival",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/GamemodeRandomSurvivalProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeRandomCreative",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_random_creative",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/GamemodeRandomCreativeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemoderandomAdventure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemoderandom_adventure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/GamemoderandomAdventureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GamemodeRandomSpectator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamemode_random_spectator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/GamemodeRandomSpectatorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CoordsUI",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coords_ui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/client/screens/CoordsUIOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "KillSelector",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kill_selector",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/network/KillSelectorButtonMessage.java",
+          "src/main/java/net/mod/adminpanel/world/inventory/KillSelectorMenu.java",
+          "src/main/java/net/mod/adminpanel/client/gui/KillSelectorScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "KillScript",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kill_script",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/KillScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenKillSelector",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_kill_selector",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenKillSelectorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "KickSelector",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kick_selector",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/network/KickSelectorButtonMessage.java",
+          "src/main/java/net/mod/adminpanel/client/gui/KickSelectorScreen.java",
+          "src/main/java/net/mod/adminpanel/world/inventory/KickSelectorMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "OpenKickSelector",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_kick_selector",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenKickSelectorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "KickScript",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kick_script",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/KickScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BanSelector",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ban_selector",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/world/inventory/BanSelectorMenu.java",
+          "src/main/java/net/mod/adminpanel/network/BanSelectorButtonMessage.java",
+          "src/main/java/net/mod/adminpanel/client/gui/BanSelectorScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "BanScript",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ban_script",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/BanScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenBanSelector",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_ban_selector",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenBanSelectorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HLAChecker",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hla_checker",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/HLACheckerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GiveHLA",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_hla",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/command/GiveHLACommand.java"
+        ]
+      }
+    },
+    {
+      "name": "HLAScript",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hla_script",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/HLAScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenHLAServerSettings",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_hla_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenHLAServerSettingsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CloseCurrentGUI",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close_current_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/CloseCurrentGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HLAMenu",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hla_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/world/inventory/HLAMenuMenu.java",
+          "src/main/java/net/mod/adminpanel/network/HLAMenuButtonMessage.java",
+          "src/main/java/net/mod/adminpanel/client/gui/HLAMenuScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "HLAServerSettings",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hla_server_settings",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/world/inventory/HLAServerSettingsMenu.java",
+          "src/main/java/net/mod/adminpanel/client/gui/HLAServerSettingsScreen.java",
+          "src/main/java/net/mod/adminpanel/network/HLAServerSettingsButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "OpenHLAServerMenu",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_hla_server_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenHLAServerMenuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlayerWarningMenu",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_warning_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/client/gui/PlayerWarningMenuScreen.java",
+          "src/main/java/net/mod/adminpanel/world/inventory/PlayerWarningMenuMenu.java",
+          "src/main/java/net/mod/adminpanel/network/PlayerWarningMenuButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "OpenPlayerWarn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_player_warn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/OpenPlayerWarnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WarnPlayerScript",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warn_player_script",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mod/adminpanel/procedures/WarnPlayerScriptProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "ShowCoords",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Has_Admin",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Times_Reported",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "Strikes",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "Report_System_Used",
+      "type": "logic",
+      "scope": "world",
+      "value": "false"
+    },
+    {
+      "name": "High_Level_Administrator",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Player_Level_Too_Low",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "ServerLockStatus",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "gui.admin_panel.ban_selector.BanPlayerReason": "Ban Reason (Required)",
+      "gui.admin_panel.kill_input.button_kill": "Kill",
+      "gui.admin_panel.gamemode_changer.button_specific_player": "Specific Player",
+      "gui.admin_panel.admin_panel_setting.button_radnom_player": "Random Player",
+      "gui.admin_panel.admin_panel_main.button_time": "Time",
+      "gui.admin_panel.server_only.label_server_only": "Server Only",
+      "gui.admin_panel.verify_shutdown.label_to_shutdown_the_server": "Shutdown The Server?",
+      "gui.admin_panel.gamemode_you_changer.label_admin_panel_gamemode_changer": "Admin Panel \u003e Gamemode Changer",
+      "gui.admin_panel.gamemode_random_changer.button_adventure": "Adventure",
+      "gui.admin_panel.admin_panel_main.button_gamemode_changer": "Gamemode Changer",
+      "gui.admin_panel.admin_panel_main.button_kill1": "Kill",
+      "gui.admin_panel.weather_panel.button_thunderstorm": "Thunderstorm",
+      "gui.admin_panel.admin_panel_gamemode.label_personal": "Personal \u003e Gamemode",
+      "gui.admin_panel.admin_panel_gamemode.button_survival": "Survival",
+      "gui.admin_panel.message_settings.Italic": "Italic",
+      "gui.admin_panel.gamemode_changer.button_everyone": "Everyone",
+      "gui.admin_panel.show_version.label_admin_panel_v196": "Admin Panel+ V4.4.0",
+      "gui.admin_panel.admin_panel_setting.button_server_settings": "Server Settings",
+      "gui.admin_panel.admin_panel_main.button_ban": "Ban",
+      "gui.admin_panel.hla_server_settings.button_shutdown_server": "Shutdown Server",
+      "gui.admin_panel.verify_shutdown.button_no": "No",
+      "gui.admin_panel.tp.XCoords": "X:",
+      "gui.admin_panel.admin_panel_setting.button_everyone_except_you": "Everyone (Except You)",
+      "gui.admin_panel.tp.ycoords": "Y",
+      "gui.admin_panel.admin_panel_main.button_shutdown_server": "Shutdown Server",
+      "gui.admin_panel.verify_shutdown.label_are_you_sure_you_want": "Are You Sure You Want To",
+      "gui.admin_panel.player_warning_menu.label_admin_panel_player_warning": "Admin Panel \u003e Player Warning",
+      "gui.admin_panel.admin_panel_gamemode.label_admin_panel_settings": "Admin Panel \u003e Settings \u003e",
+      "gui.admin_panel.ban_selector.label_admin_panel_ban": "Admin Panel \u003e Ban",
+      "gui.admin_panel.server_only.button_shutdown_server": "Shutdown Server",
+      "gui.admin_panel.gamemode_you_changer.button_spectator": "Spectator",
+      "gui.admin_panel.ban_selector.button_ban": "Ban",
+      "gui.admin_panel.weather_panel.button_rain": "Rain",
+      "gui.admin_panel.message_settings.label_note_only_certain_colors_may_wo": "Note: Only certain Colors May Work",
+      "gui.admin_panel.message_settings.Color": "e.g. red, yellow, black",
+      "gui.admin_panel.gamemode_everyone_changer.button_creative": "Creative",
+      "gui.admin_panel.gamemode_random_changer.button_spectator": "Spectator",
+      "gui.admin_panel.tp.Xcoords": "X",
+      "gui.admin_panel.admin_panel_main.button_empty": "X",
+      "gui.admin_panel.message_settings.label_one_then_put_in_the_hex_id": "Color then put in the Hex ID",
+      "gui.admin_panel.hla_server_settings.label_admin_panel_hla_server_setti": "Admin Panel \u003e HLA \u003e Server Settings",
+      "gui.admin_panel.admin_panel_main.button_options": "Other",
+      "gui.admin_panel.timeset.button_day": "Day",
+      "gui.admin_panel.admin_panel_main.button_weather": "Weather",
+      "gui.admin_panel.player_warning_menu.TargetWarnedReason": "Reason for Warning",
+      "gui.admin_panel.timeset.label_admin_panel_time": "Admin Panel \u003e Time",
+      "gui.admin_panel.weather_panel.button_clear": "Clear",
+      "gui.admin_panel.gamemode_random_changer.button_survival": "Survival",
+      "gui.admin_panel.message_settings.Text_For_Message": "Text for Message",
+      "gui.admin_panel.tp.tooltip_do_not_have_x_y_or_z_at_the": "Do Not have the letters X:, Y:, or Z: at the beginning of the coords",
+      "gui.admin_panel.kick_selector.KickPlayerReason": "Kick Reason (Required)",
+      "gui.admin_panel.admin_panel_main.label_server_only": "Server Only",
+      "gui.admin_panel.timeset.button_noon": "Noon",
+      "gui.admin_panel.admin_panel_main.label_empty1": "-------------------------------",
+      "gui.admin_panel.kick_selector.button_kick": "Kick",
+      "gui.admin_panel.message_settings.label_message_settings": "Message Settings",
+      "gui.admin_panel.kick_selector.KickPlayerName": "Target\u0027s Username",
+      "gui.admin_panel.player_warning_menu.button_send_warning": "Send Warning",
+      "gui.admin_panel.hla_server_settings.button_reporting_system": "Reporting System",
+      "gui.admin_panel.gamemode_specific_changer.label_admin_panel_gamemode_changer": "Admin Panel \u003e Gamemode Changer",
+      "gui.admin_panel.kick_selector.label_admin_panel_kick": "Admin Panel \u003e Kick",
+      "gui.admin_panel.gamemode_changer.label_who_to_apply_this_to": "Who to Apply this to",
+      "gui.admin_panel.admin_panel_setting.button_shared_admin_inventory": "Shared Admin Inventory",
+      "gui.admin_panel.gamemode_you_changer.button_survival": "Survival",
+      "gui.admin_panel.message_settings.label_text": "Text (Required)",
+      "gui.admin_panel.tp.Zcoords": "Z",
+      "gui.admin_panel.admin_panel_setting.button_everyone": "Everyone",
+      "gui.admin_panel.tp.Y_Coords": "Y:",
+      "gui.admin_panel.gamemode_you_changer.button_adventure": "Adventure",
+      "gui.admin_panel.message_settings.button_send_message": "Send Message",
+      "gui.admin_panel.tp.zcoords": "Z",
+      "gui.admin_panel.admin_panel_gamemode.button_creative": "Creative",
+      "gui.admin_panel.admin_panel_gamemode.button_adventure": "Adventure",
+      "gui.admin_panel.tp.xcoords": "X",
+      "gui.admin_panel.admin_panel_main.button_kick": "Kick",
+      "gui.admin_panel.tp.Ycoords": "Y",
+      "gui.admin_panel.kill_selector.KillPlayerName": "Target\u0027s Username",
+      "gui.admin_panel.gamemode_specific_changer.gamemodespecificplayer": "Player Username",
+      "gui.admin_panel.message_settings.label_if_you_want_a_custom_one_then_pu": "if you want a custom",
+      "gui.admin_panel.gamemode_everyone_changer.label_admin_panel_gamemode_changer": "Admin Panel \u003e Gamemode Changer",
+      "gui.admin_panel.gamemode_specific_changer.button_adventure": "Adventure",
+      "gui.admin_panel.admin_panel_setting.button_toggle_admin_panel_watermark": "Toggle Admin Panel Watermark",
+      "gui.admin_panel.admin_panel_setting.label_default_is_on": "(Default is On)",
+      "gui.admin_panel.adminpanel_personal.button_toogle_coords": "Toogle Coords",
+      "gui.admin_panel.gamemode_changer.button_everyone_except_you": "Everyone Except You",
+      "gui.admin_panel.gamemode_specific_changer.button_survival": "Survival",
+      "gui.admin_panel.admin_panel_gamemode.button_spectator": "Spectator",
+      "gui.admin_panel.gamemode_changer.GamemodeSpecificPlayer": "Specific Player",
+      "gui.admin_panel.kill_selector.button_kill": "Kill",
+      "gui.admin_panel.tp.Z_Coords": "Z:",
+      "gui.admin_panel.adminpanel_personal.label_admin_panel_settings_personal": "Admin Panel \u003e Other \u003e Personal",
+      "gui.admin_panel.tp.label_admin_panel_tp": "Admin Panel \u003e TP",
+      "gui.admin_panel.gamemode_changer.GamemodeYou": "You",
+      "gui.admin_panel.gamemode_changer.button_you": "You",
+      "gui.admin_panel.gamemode_everyone_changer.button_adventure": "Adventure",
+      "gui.admin_panel.player_warning_menu.TargetWarnedPlayer": "Player to Warn",
+      "gui.admin_panel.gamemode_changer.GamemodeEveryone": "Everyone",
+      "gui.admin_panel.ban_selector.BanPlayerName": "Target\u0027s Username",
+      "gui.admin_panel.timeset.button_midnight": "Midnight",
+      "gui.admin_panel.admin_panel_main.label_empty": "-------------------------------",
+      "gui.admin_panel.tp.X_Coords": "X:",
+      "gui.admin_panel.admin_panel_setting.button_personal_settings": "Personal Settings",
+      "gui.admin_panel.kill_input.Player_Name": "Player_Name",
+      "gui.admin_panel.gamemode_you_changer.button_creative": "Creative",
+      "gui.admin_panel.tp.TPPlayername": "Player to Teleport",
+      "gui.admin_panel.kill_selector.label_admin_panel_kill": "Admin Panel \u003e Kill",
+      "gui.admin_panel.gamemode_changer.button_random_player": "Random Player",
+      "gui.admin_panel.gamemode_random_changer.label_admin_panel_gamemode_changer": "Admin Panel \u003e Gamemode Changer",
+      "gui.admin_panel.message_settings.Bold": "Bold",
+      "gui.admin_panel.verify_shutdown.button_yes": "Yes",
+      "gui.admin_panel.gamemode_random_changer.button_creative": "Creative",
+      "gui.admin_panel.tp.YCoords": "Y:",
+      "gui.admin_panel.admin_panel_setting.label_admin_panel_settings": "Admin Panel \u003e Other",
+      "gui.admin_panel.gamemode_changer.GamemodeEveryoneExceptAdmin": "Everyone Except You",
+      "gui.admin_panel.admin_panel_main.button_hla": "HLA",
+      "gui.admin_panel.adminpanel_personal.button_toggle_coords": "Toggle Coords",
+      "gui.admin_panel.admin_panel_main.button_tellraw": "Tellraw",
+      "gui.admin_panel.gamemode_everyone_changer.button_survival": "Survival",
+      "gui.admin_panel.admin_panel_main.button_warn_player": "Warn Player",
+      "gui.admin_panel.hla_menu.button_hla_server_settings": "HLA Server Settings",
+      "key.admin_panel.open_admin_panel": "Open Admin Panel",
+      "gui.admin_panel.message_settings.Obfuscated": "Obfuscated",
+      "gui.admin_panel.gamemode_changer.GamemodeRandom": "Random Player",
+      "gui.admin_panel.weather_panel.label_admin_panel_weather": "Admin Panel \u003e Weather",
+      "gui.admin_panel.hla_menu.label_admin_panel_other_hla": "Admin Panel \u003e Other \u003e HLA",
+      "gui.admin_panel.admin_panel_setting.button_personal": "Personal",
+      "gui.admin_panel.adminpanel_personal.button_gamemode": "Gamemode",
+      "gui.admin_panel.admin_panel_setting.button_specific_player": "Specific Player",
+      "gui.admin_panel.server_only.button_message_server": "Message Server",
+      "gui.admin_panel.gamemode_changer.label_admin_panel_gamemode_changer": "Admin Panel \u003e Gamemode Changer",
+      "gui.admin_panel.admin_panel_main.label_admin_panel": "Admin Panel",
+      "gui.admin_panel.admin_panel_main.button_server_only": "Server Only",
+      "gui.admin_panel.tp.ZCoords": "Z:",
+      "gui.admin_panel.admin_panel_setting.button_highlevel_administrator": "High-Level Administrator",
+      "gui.admin_panel.kill_input.PlayerName": "Player Target",
+      "gui.admin_panel.message_settings.label_color": "Color (Required)",
+      "gui.admin_panel.gamemode_specific_changer.button_spectator": "Spectator",
+      "gui.admin_panel.gamemode_specific_changer.button_creative": "Creative",
+      "gui.admin_panel.timeset.button_night": "Night",
+      "gui.admin_panel.gamemode_everyone_changer.button_spectator": "Spectator",
+      "gui.admin_panel.admin_panel_main.button_kill": "TP",
+      "gui.admin_panel.tp.button_tp": "TP"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "admin_panel",
+    "modName": "Admin Panel+",
+    "version": "4.4.0",
+    "description": "A Mod That Adds An Admin Panel To Make Actions in Your World Easy",
+    "author": "VirtuForge Mods",
+    "websiteURL": "https://sites.google.com/view/virtuforge-mods",
+    "license": "All Rights Reserved",
+    "serverSideOnly": false,
+    "modPicture": "admin_panel_logo",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created By, VirtualVoyager367 AKA Zemabri",
+    "modElementsPackage": "net.mod.adminpanel"
+  },
+  "mcreatorVersion": 202400452410
+}

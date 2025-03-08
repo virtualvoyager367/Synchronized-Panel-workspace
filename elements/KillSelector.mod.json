@@ -1,0 +1,66 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 136,
+    "height": 70,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_admin_panel_kill",
+          "text": {
+            "fixedValue": "Admin Panel > Kill"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 170,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Target's Username",
+          "name": "KillPlayerName",
+          "width": 120,
+          "height": 20,
+          "x": 154,
+          "y": 103,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_kill",
+          "text": "Kill",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "KillScript"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 190,
+          "y": 129,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

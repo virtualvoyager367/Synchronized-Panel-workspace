@@ -1,0 +1,233 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 192,
+    "height": 217,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_admin_panel",
+          "text": {
+            "fixedValue": "Admin Panel"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 183,
+          "y": 22,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_kill",
+          "text": "TP",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenTP"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 240,
+          "y": 94,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_options",
+          "text": "Other",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenSettings"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 122,
+          "y": 204,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_weather",
+          "text": "Weather",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenWeather"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 231,
+          "y": 67,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_time",
+          "text": "Time",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Opentime"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 238,
+          "y": 42,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_tellraw",
+          "text": "Tellraw",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenMessageServer"
+          },
+          "width": 61,
+          "height": 20,
+          "x": 131,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_gamemode_changer",
+          "text": "Gamemode Changer",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenGamemodeChanger"
+          },
+          "width": 108,
+          "height": 20,
+          "x": 155,
+          "y": 168,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_kill1",
+          "text": "Kill",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenKillSelector"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 137,
+          "y": 41,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_kick",
+          "text": "Kick",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenKickSelector"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 137,
+          "y": 67,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_ban",
+          "text": "Ban",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenBanSelector"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 140,
+          "y": 94,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "-------------------------------"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 122,
+          "y": 153,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_hla",
+          "text": "HLA",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenHLAServerSettings"
+          },
+          "displayCondition": {
+            "name": "HLAChecker"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 265,
+          "y": 204,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_warn_player",
+          "text": "Warn Player",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenPlayerWarn"
+          },
+          "width": 82,
+          "height": 20,
+          "x": 221,
+          "y": 120,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

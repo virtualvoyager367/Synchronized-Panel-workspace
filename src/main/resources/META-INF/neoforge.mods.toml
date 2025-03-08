@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="admin_panel"
+version="4.4.0"
+displayName="Admin Panel+"
+displayURL="https://sites.google.com/view/virtuforge-mods"
+logoFile="logo.png"
+credits="Created By, VirtualVoyager367 AKA Zemabri"
+authors="VirtuForge Mods"
+description="A Mod That Adds An Admin Panel To Make Actions in Your World Easy"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.admin_panel]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1.65,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.admin_panel]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

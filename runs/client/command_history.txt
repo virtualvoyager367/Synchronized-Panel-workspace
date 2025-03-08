@@ -1,0 +1,50 @@
+/gamemode survival
+/gamemode creative
+/time set day
+/op dev
+/tp @s 0 100 2
+/admin_give @s
+/admin_take @s
+/admin_take dev
+/admin_give @s
+/admin_take @s
+/admin_give @s
+/op dev
+/tp
+/tp 0 0 0 0
+/tp dev 100 100 100
+/op dev
+/kick dev
+/kick dev ball sack
+/kick @a
+/give @s minecraft:command_block
+/gamemode survival
+/gamemode creative
+/report dev "he was being mean"
+/report Dev griefing
+/report @s "ate pizza"
+/report Dev test
+/strike Dev 0
+/report Dev test
+/strike Dev 2
+/report Dev test
+/report Dev Test
+/vanish
+/strike change Dev 0
+/strike_amount
+/strike_change dev 2
+/report dev
+/strike_change Dev 2
+/strike_amount
+/report Dev
+/report Dev test
+/report Dev testreason
+/report Dev
+/hla Dev true
+/op Dev
+/hla dev true
+/hla Dev Dev true
+/deop dev
+/hla Dev Dev false
+/op Dev
+/hla Dev Dev true

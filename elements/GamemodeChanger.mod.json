@@ -1,0 +1,102 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 171,
+    "height": 201,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_admin_panel_gamemode_changer",
+          "text": {
+            "fixedValue": "Admin Panel > Gamemode Changer"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 136,
+          "y": 30,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_you",
+          "text": "You",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenGamemodeYou"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 193,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_everyone",
+          "text": "Everyone",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpengamemodeEveryoneChanger"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 180,
+          "y": 76,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_specific_player",
+          "text": "Specific Player",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenGamemodeSpecific"
+          },
+          "width": 103,
+          "height": 20,
+          "x": 164,
+          "y": 106,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_random_player",
+          "text": "Random Player",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenRandomGamemode"
+          },
+          "width": 93,
+          "height": 20,
+          "x": 168,
+          "y": 135,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

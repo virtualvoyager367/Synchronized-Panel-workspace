@@ -1,0 +1,140 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 233,
+    "height": 220,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "Bold",
+          "text": "Bold",
+          "x": 114,
+          "y": 45,
+          "locked": false
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "Obfuscated",
+          "text": "Obfuscated",
+          "x": 114,
+          "y": 88,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "e.g. red, yellow, black",
+          "name": "Color",
+          "width": 120,
+          "height": 20,
+          "x": 105,
+          "y": 202,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_color",
+          "text": {
+            "fixedValue": "Color (Required)"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 122,
+          "y": 192,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_message_settings",
+          "text": {
+            "fixedValue": "Message Settings"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 176,
+          "y": 18,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Text for Message",
+          "name": "Text_For_Message",
+          "width": 120,
+          "height": 20,
+          "x": 105,
+          "y": 172,
+          "locked": false
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "name": "Italic",
+          "text": "Italic",
+          "x": 114,
+          "y": 129,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_text",
+          "text": {
+            "fixedValue": "Text (Required)"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 125,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_send_message",
+          "text": "Send Message",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "MessageServer"
+          },
+          "width": 87,
+          "height": 20,
+          "x": 236,
+          "y": 203,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

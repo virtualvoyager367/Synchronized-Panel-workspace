@@ -1,0 +1,116 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 149,
+    "height": 159,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "X",
+          "name": "xcoords",
+          "width": 120,
+          "height": 20,
+          "x": 154,
+          "y": 58,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Y",
+          "name": "ycoords",
+          "width": 120,
+          "height": 20,
+          "x": 154,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Z",
+          "name": "zcoords",
+          "width": 120,
+          "height": 20,
+          "x": 154,
+          "y": 110,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_admin_panel_tp",
+          "text": {
+            "fixedValue": "Admin Panel > TP"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 175,
+          "y": 48,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_tp",
+          "text": "TP",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "TPCode"
+          },
+          "width": 35,
+          "height": 20,
+          "x": 196,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_do_not_have_x_y_or_z_at_the",
+          "text": {
+            "fixedValue": "Do Not have the letters X:, Y:, or Z: at the beginning of the coords"
+          },
+          "width": 24,
+          "height": 24,
+          "x": 146,
+          "y": 168,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Player to Teleport",
+          "name": "TPPlayername",
+          "width": 120,
+          "height": 20,
+          "x": 154,
+          "y": 147,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

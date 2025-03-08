@@ -1,0 +1,15 @@
+{
+  "_fv": 73,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "O",
+    "keyBindingName": "Open Admin Panel",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "OpenAdminPanelCode"
+    },
+    "onKeyReleased": {
+      "name": "OpenAdminPanelCode"
+    }
+  }
+}

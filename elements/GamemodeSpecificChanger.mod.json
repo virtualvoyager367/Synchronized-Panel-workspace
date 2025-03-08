@@ -1,0 +1,114 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 200,
+    "height": 180,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_admin_panel_gamemode_changer",
+          "text": {
+            "fixedValue": "Admin Panel > Gamemode Changer"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 135,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_creative",
+          "text": "Creative",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GamemodeSpecificCreative"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 172,
+          "y": 113,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Player Username",
+          "name": "gamemodespecificplayer",
+          "width": 120,
+          "height": 20,
+          "x": 146,
+          "y": 54,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_survival",
+          "text": "Survival",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GamemodeSpecificSurvival"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 172,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_adventure",
+          "text": "Adventure",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GamemodeSpecificAdventure"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 170,
+          "y": 141,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_spectator",
+          "text": "Spectator",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GamemodeSpecificSpectator"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 170,
+          "y": 170,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

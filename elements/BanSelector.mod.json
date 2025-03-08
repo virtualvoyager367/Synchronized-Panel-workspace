@@ -1,0 +1,78 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 136,
+    "height": 100,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_admin_panel_ban",
+          "text": {
+            "fixedValue": "Admin Panel > Ban"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 171,
+          "y": 75,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Target's Username",
+          "name": "BanPlayerName",
+          "width": 120,
+          "height": 20,
+          "x": 154,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Ban Reason (Required)",
+          "name": "BanPlayerReason",
+          "width": 120,
+          "height": 20,
+          "x": 154,
+          "y": 114,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_ban",
+          "text": "Ban",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "BanScript"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 192,
+          "y": 140,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

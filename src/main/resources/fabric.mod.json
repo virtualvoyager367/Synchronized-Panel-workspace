@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "admin_panel",
+  "version": "4.4.0",
+  "name": "Admin Panel+",
+  "description": "A Mod That Adds An Admin Panel To Make Actions in Your World Easy",
+  "authors": [
+    "VirtuForge Mods"
+  ],
+  "contact": {
+    "homepage": "https://sites.google.com/view/virtuforge-mods",
+    "sources": ""
+  },
+  "license": "All Rights Reserved",
+  "icon": "assets/admin_panel/icon.png",
+  "accessWidener": "admin_panel.accesswidener",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.mod.adminpanel.AdminPanelMod"
+    ],
+    "client": [
+      "net.mod.adminpanel.ClientInit"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "~1.20",
+    "java": ">=17"
+  }
+}

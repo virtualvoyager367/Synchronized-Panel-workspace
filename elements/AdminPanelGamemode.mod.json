@@ -1,0 +1,118 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_admin_panel_settings",
+          "text": {
+            "fixedValue": "Admin Panel > Settings >"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 154,
+          "y": 47,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_personal",
+          "text": {
+            "fixedValue": "Personal > Gamemode"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 162,
+          "y": 56,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_survival",
+          "text": "Survival",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetGamemodeSurvival"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 139,
+          "y": 86,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_creative",
+          "text": "Creative",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetGamemodeCreative"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 224,
+          "y": 86,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_spectator",
+          "text": "Spectator",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetGamemodeSpectator"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 222,
+          "y": 121,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_adventure",
+          "text": "Adventure",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SetGamemodeAdventure"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 137,
+          "y": 121,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

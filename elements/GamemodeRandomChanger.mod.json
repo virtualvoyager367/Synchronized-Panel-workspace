@@ -1,0 +1,102 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_admin_panel_gamemode_changer",
+          "text": {
+            "fixedValue": "Admin Panel > Gamemode Changer"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 135,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_survival",
+          "text": "Survival",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GamemodeRandomSurvival"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 182,
+          "y": 63,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_creative",
+          "text": "Creative",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GamemodeRandomCreative"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 182,
+          "y": 92,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_adventure",
+          "text": "Adventure",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GamemoderandomAdventure"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 180,
+          "y": 120,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_spectator",
+          "text": "Spectator",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "GamemodeRandomSpectator"
+          },
+          "width": 72,
+          "height": 20,
+          "x": 180,
+          "y": 150,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

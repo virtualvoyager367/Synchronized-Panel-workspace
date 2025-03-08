@@ -1,0 +1,17 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-07-22 16:18:20 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:meadow": "2024-08-23 08:49:25 -0700",
+      "minecraft:birch_forest": "2024-07-22 16:18:21 -0700",
+      "minecraft:dripstone_caves": "2024-08-23 08:49:06 -0700"
+    },
+    "done": false
+  },
+  "DataVersion": 3839
+}

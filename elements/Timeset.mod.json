@@ -1,0 +1,102 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 96,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_midnight",
+          "text": "Midnight",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Timesetmidnight"
+          },
+          "width": 67,
+          "height": 20,
+          "x": 209,
+          "y": 130,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_day",
+          "text": "Day",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Timesetday"
+          },
+          "width": 40,
+          "height": 20,
+          "x": 155,
+          "y": 104,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_night",
+          "text": "Night",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Timesetnight"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 149,
+          "y": 130,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_noon",
+          "text": "Noon",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Timesetnoon"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 219,
+          "y": 105,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_admin_panel_time",
+          "text": {
+            "fixedValue": "Admin Panel > Time"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 166,
+          "y": 81,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
