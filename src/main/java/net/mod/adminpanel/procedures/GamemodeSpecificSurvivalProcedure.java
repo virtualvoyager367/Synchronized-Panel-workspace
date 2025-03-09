@@ -16,7 +16,9 @@ public class GamemodeSpecificSurvivalProcedure {
 		if (entity == null || guistate == null)
 			return;
 		if (!((guistate.containsKey("textin:gamemodespecificplayer") ? (String) guistate.get("textin:gamemodespecificplayer") : "").equals("@a")
-				|| (guistate.containsKey("textin:gamemodespecificplayer") ? (String) guistate.get("textin:gamemodespecificplayer") : "").equals("@p"))) {
+				|| (guistate.containsKey("textin:gamemodespecificplayer") ? (String) guistate.get("textin:gamemodespecificplayer") : "").equals("@p")
+				|| (guistate.containsKey("textin:gamemodespecificplayer") ? (String) guistate.get("textin:gamemodespecificplayer") : "").equals("@s")
+				|| (guistate.containsKey("textin:gamemodespecificplayer") ? (String) guistate.get("textin:gamemodespecificplayer") : "").equals("@e"))) {
 			if (world instanceof ServerLevel _level)
 				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 						(("gamemode survival" + " ") + "" + (guistate.containsKey("textin:gamemodespecificplayer") ? (String) guistate.get("textin:gamemodespecificplayer") : "")));
